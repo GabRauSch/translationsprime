@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime translations</title>
+    <link rel="icon" href="diamond.png" type="image/x-icon">
+
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+            font-family:Verdana, Geneva, Tahoma, sans-serif
+        }
+        :root{
+            --background: #5E0C1C;
+            --color: #FFF8CE;
+            --hover: #0C5E4E;
+        }
+
+        /* Scrollbar width */
+        ::-webkit-scrollbar {
+        width: 10px;
+        border-radius: 10px;
+
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 10px;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+        background: var(--background);
+        border-radius: 10px;
+        cursor: pointer;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+        background: var(--hover);
+        }
+
+        a{
+            text-decoration: none;
+            color: white;
+
+        }
+        header{
+            background-color: var(--background);
+            color: var(--color);
+            display: flex;
+            justify-content: center;
+        }
+        footer{
+            background-color: var(--background);
+            color: var(--color);
+            height: 5s0px;
+            display: flex;
+            justify-content: center;
+        }
+        .footer-text{
+            justify-content: center;
+            font-size: 12px;
+        }
+        .container{
+            width: 1000px;
+            display: flex;
+            align-items: center;
+        }
+        nav ul{
+            display: flex;
+            list-style-type: none;
+            gap: 10px;
+        }
+        nav ul li{
+            cursor: pointer;
+            border-bottom: 2px solid transparent;
+            padding: 10px
+        }
+        #selected-nav,
+        nav ul li:hover{
+            border-bottom: 2px solid var(--color);
+        }
+        .container-header{
+            justify-content: space-between;
+        }
+
+        section{
+            display: flex;
+            justify-content: center;
+            padding: 10px
+        }
+        .panel-disclaimer{
+            padding: 20px;
+            font-size: 35px;
+            text-shadow: 0px 1px 3px #333;
+        }
+        .panel-option{
+            padding: 20px;
+            font-size: 16px;
+            user-select: none;
+            transition: all ease .2s;
+        }
+        .panel-option:hover{
+            background-color: var(--hover);
+            color: var(--color)
+        }
+        .panel{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 700px;
+        }
+        .aboutus-text{
+            padding: 20px;
+            line-height: 20px;
+        }
+        .exchange{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .choose{
+            margin: 20px
+        }
+        .button-area{
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+        .contact-button{
+            justify-content: center;
+            font-size: 20px;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px;
+            background-color: var(--background);
+            color: var(--color);
+            text-align: center;
+            width: fit-content;
+            cursor: pointer;
+            transition: all ease .2s;
+        }
+        .contact-button:hover{
+            background-color: var(--hover);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container container-header">
+            <div style="display: flex; align-items: center;"> 
+                <img src="primediamond.png" width="100px"/>
+                <div>Prime Translations</div>
+            </div>
+            <nav>
+                <ul>
+                    <li id="selected-nav">Home</li>
+                    <li>About us</li>
+                    <li>Blog</li>
+                    <li>Contact us</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section>
+        <div class="container">
+            <div class="panel">
+                <h1 class="panel-disclaimer">
+                    Prime translation within hours!
+                </h1>
+                <div class="container">
+                    <div class="panel-option">Enroll as a priority client!</div>
+                    <div class="panel-option">Hire a freelancer and a reviser!</div>
+                    <div class="panel-option">Translate with native translators!</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div style="background-color: var(--hover); height: 100px;"></div>
+    <section>
+        <div class="container">
+            <div>
+                <h1 class="panel-disclaimer">
+                    About us
+                </h1>
+                <div class="aboutus-text">
+                    At Prime Translations, we specialize in translating from English to Portuguese, focusing on accuracy and efficiency. Our expertise covers books and articles in areas such as IT, health, psychology, and technology, offering both technical precision and informal adaptability to meet the needs of every project.
+
+                    We know the importance of delivering translations that are not only accurate but also fast. That's why we offer flexible plans tailored to your deadlines—pay more, and receive your content even faster. Whether you need specialized technical language or a more casual tone, we're here to make sure your message is clear, compelling, and delivered on time.
+                </div>
+                <div class="exchange">
+                    <h1 class="choose">Choose your language input and output</h1>
+                    <img src="exchange.png" width="300px"/>
+                </div>
+                <div class="exchange">
+                    <h1 class="choose">Choose the method based on your needs</h1>
+                    <img src="plans.png" width="300px"/>
+                </div>
+                <div class="button-area">
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=primeprotranslations@gmail.com&su=I'd like to know more about your service!&body=Hello!%20" target="_blank" class="contact-button">Contact us now!</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container footer-text">
+            Prime translations - We translate the way you need!
+        </div>
+    </footer>
+</body>
+</html>
